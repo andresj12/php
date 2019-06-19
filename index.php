@@ -22,7 +22,7 @@ if(!empty($_FILES)){
    try{
         $file = $dropbox->simpleUpload( $tempfile,$nombredropbox, ['autorename' => true]);
         echo "Archivo subido en dropbox";
-        include './index1.php';
+        include './clarifai.php';
    }catch(\exception $e){
         print_r($e);
         
